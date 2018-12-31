@@ -1,0 +1,119 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Daily Food Challenge</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-title" content="Daily Food Challenge">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">-->
+          <!--<div class="container">-->
+            <!--<div class="navbar-header">-->
+              <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">-->
+                <!--<span class="sr-only">Toggle navigation</span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+              <!--</button>-->
+              <!--<a class="navbar-brand" href="#">Project name</a>-->
+            <!--</div>-->
+            <!--<div id="navbar" class="navbar-collapse collapse">-->
+              <!--<form class="navbar-form navbar-right" role="form">-->
+                <!--<div class="form-group">-->
+                  <!--<input type="text" placeholder="Email" class="form-control">-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                  <!--<input type="password" placeholder="Password" class="form-control">-->
+                <!--</div>-->
+                <!--<button type="submit" class="btn btn-success">Sign in</button>-->
+              <!--</form>-->
+            <!--</div>&lt;!&ndash;/.navbar-collapse &ndash;&gt;-->
+          <!--</div>-->
+        <!--</nav>-->
+
+        <header>
+            <div class="header__bg"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <label>Today's Score:</label>
+                        <h3>215 pts.</h3>
+                        <label>All-time:</label>
+                        <h4>1,230 pts.</h4>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <label>Your Ranking:</label>
+                        <h1>1st</h1>
+                        <p>out of <strong>4</strong> players</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 js-summary-section">
+                    <h3>Today's Summary</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3>Leaderboard</h3>
+                </div>
+            </div>
+
+            <hr>
+            <footer class="text-center">
+                <p>&copy; 2018 Jonathan Williamson </p>
+            </footer>
+        </div> <!-- /container -->
+
+        <!-- Templates -->
+        <div class="row food-item" id="foodItemTemplate" style="display: none;">
+            <div class="col-xs-6 nowrap">
+                <img src="[image-url]"/>
+                <span class="title">[label]<span class="caret"></span></span>
+            </div>
+            <div class="col-xs-6 text-right">
+                <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-checkbox">
+                        <input type="checkbox" autocomplete="off"><span class="glyphicon glyphicon-ok"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <!-- User JavaScript -->
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyDAO_fCv96ieVW_uprxtoR0i_aeSnR6uSc",
+                authDomain: "daily-food-challenge.firebaseapp.com",
+                databaseURL: "https://daily-food-challenge.firebaseio.com",
+                projectId: "daily-food-challenge",
+                storageBucket: "daily-food-challenge.appspot.com",
+                messagingSenderId: "275994218713"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

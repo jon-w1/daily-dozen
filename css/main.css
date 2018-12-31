@@ -1,0 +1,121 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    background: #F3F3F3;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: bolder;
+    margin-bottom: 3px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+header {
+    position: relative;
+    padding: 20px 0;
+    overflow: hidden;
+    color: white;
+}
+
+.header__bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, #0DBFF9, #5661F6);
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    z-index: -1;
+}
+
+header label, header p {
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 11px;
+}
+
+header label {
+    text-transform: uppercase;
+}
+
+header h1, header h2, header h3, header h4 {
+    margin-top: 0;
+    letter-spacing: 1px;
+}
+
+header h2, header h3, header h4 {
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.food-item {
+    background: white;
+    border-radius: 8px;
+    margin: 0;
+    padding: 17px 0;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.food-item img {
+    width: 23px;
+    margin-right: 6px;
+}
+
+.food-item .btn-group {
+    margin-left: 4px;
+}
+
+.btn-checkbox {
+    height: 23px;
+    width: 23px;
+    border: 2px solid #C2C2C2;
+    border-radius: 5px;
+    background: white;
+    padding: 0;
+}
+
+.btn-checkbox:focus {
+    outline: none;
+}
+
+.btn-checkbox .glyphicon {
+    display: none;
+}
+
+.btn-checkbox:active, .btn-checkbox.active {
+    box-shadow: none;
+    border: none;
+    background: #3886F7;
+    padding: 3px;
+}
+
+.btn-checkbox:active .glyphicon, .btn-checkbox.active .glyphicon {
+    display: block;
+    color: white;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
